@@ -5,6 +5,8 @@ based on recognized patterns.
 
 Simply put, I took popular trusted strategies for technical analysis trading and wrote them into code.
 
+---
+
 ### How it Works
 
 Each program retrieves price data in bulk from the MetaTrader API. These algorithms focus primarily on currency pairings -
@@ -23,7 +25,11 @@ the Exponential Moving Average.
 When a handful of measurements are determined by the program to be favorable all at once, a trade is then placed.
 The bots know - based on their measurements - whether this trade should be a buy or sell!
 
+---
+
 **Take a look at some of the outputs in the pictures below to see the trades in action!**
+
+---
 
 ### Some Key Price Data Patterns/Metrics
 
@@ -39,6 +45,8 @@ Candlestick Patterns:
     Triple Top Reversal
     Bullish/Bearish Continuations
 ```
+
+---
 
 ### What They Look Like in Action
 
