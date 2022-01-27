@@ -1,10 +1,29 @@
 # Algorithm Trading
 
-These Python scripts are designed to perform numerous calculations on financial market data from the MetaTrader API and place trades.
+Each Python script is an algorithm-based trading bot. They are all designed to process price data and execute trades
+based on recognized patterns.
 
-They query the API for raw price data, then calculate things like moving averages, relative strength index, and Bollinger bands. 
+Simply put, I took popular trusted strategies for technical analysis trading and wrote them into code.
 
-When a combination of a few particular metrics shows a well-known technical pattern which draws trading volume, the programs will actually place the trades automatically!
+### How it Works
+
+Each program retrieves price data in bulk from the MetaTrader API. These algorithms focus primarily on currency pairings -
+both national currencies and cryptocurrencies.
+
+It applies various measurements to a particular currency pair's `high`, `low`, `open` and `close` price. 
+These measurements are common technical analysis strategies practiced by traders all over the world. 
+
+Typically, these strategies are drawn on charts using technology and visualized by the naked eye.
+However, here we simply coded the math behind each of these graphical strategies.
+
+Each measurement taken is associated with its relative value in relation to price. For example, we don't just
+look at the Exponential Moving Average itself, but instead we take a look at how far away the current price is from
+the Exponential Moving Average.
+
+When a handful of measurements are determined by the program to be favorable all at once, a trade is then placed.
+The bots know - based on their measurements - whether this trade should be a buy or sell!
+
+**Take a look at some of the outputs in the pictures below to see the trades in action!**
 
 ### Some Key Price Data Patterns/Metrics
 
